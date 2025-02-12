@@ -23,7 +23,7 @@ public class Employees_Chapter04 {
 
 			// SQLクエリを準備
 			String sql = """
-					CREATE TABLE users (
+					CREATE TABLE emplyees (
 					  id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 					  name VARCHAR(60) NOT NULL,
 					  email VARCHAR(255) NOT NULL,
