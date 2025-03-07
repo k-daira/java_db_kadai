@@ -42,8 +42,9 @@ public class Posts_Chapter07 {
 				statement.setString(2, user[1]); // 投稿日時
 				statement.setString(3, user[2]); // 投稿内容
 				statement.setString(4, user[3]); // いいね数
-				statement.executeUpdate();
+				statement.addBatch();
 			}
+			statement.executeBatch();
 			System.out.println(userList.length + "件のレコードが追加されました");
 
 			// ユーザーID 1002 のレコード検索
